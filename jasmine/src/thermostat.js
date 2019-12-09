@@ -45,7 +45,7 @@ Thermostat.prototype.reset = function(){
 }
 
 Thermostat.prototype.energyUsageCheck = function(){
-  if(this.temperature < this.LOW_USAGE_TEMP){
+  if(this.temperature <= this.LOW_USAGE_TEMP){
     return "low-usage";
   }
   else if(this.LOW_USAGE_TEMP < this.temperature && this.temperature < this.HIGH_USAGE_TEMP){

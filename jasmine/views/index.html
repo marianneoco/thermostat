@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thermostat</title>
+
+    <script src = "../src/thermostat.js"></script>
+    <script src = "jquery-3.4.1.min.js"></script>
+    <script src = "interface.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "styles.css">
+
+  </head>
+  <body>
+  <h1>Thermostat</h1>
+  Current temperature in
+    <select id = "city">
+      <option value = "londonuk"> London </option>
+      <option value = "new-yorkus"> New York </option>
+      <option value = "berlinge"> Berlin </option>
+    </select>
+
+  is <h2 id = "city-temp"></h2>
+  <br>
+  Current thermostat temperature is: <h2 id = "temperature"></h2>
+  <button id = "temperature-up">UP</button>
+  <button id = "temperature-down">DOWN</button>
+  <button id = "reset">RESET</button>
+  <br>
+  <br>
+  Power saving is: <h2 id = "power-saving"></h2>
+  <button id = "power-saving-off">Turn power-saving off</button>
+  <button id = "power-saving-on">Turn power-saving on</button>
+  <body>
+</html>
