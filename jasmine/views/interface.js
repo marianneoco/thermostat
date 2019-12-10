@@ -20,6 +20,7 @@ $(document).ready(function(){
   function updateDisplay(){
     usage = thermostat.energyUsageCheck();
     $('#temperature').attr('class', usage)
+    $('#energy-usage').text(usage).attr('class', usage)
   }
 
   $('#temperature-up').click(function(){
@@ -49,6 +50,7 @@ $(document).ready(function(){
 
   $('#city').change(function(){
     $('#city-temp').text(getWeatherStatus($('#city').val()));
+    $('#city-img').attr('src', ("../img/" + $('#city').val() + ".png"))
   })
 
 })

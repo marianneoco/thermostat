@@ -1,11 +1,38 @@
-.low-usage{
+.low{
   color: green;
 }
 
-.medium-usage{
+.medium{
   color: black;
 }
 
-.high-usage{
+.high{
   color: red;
+}
+
+#main{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 10px solid green;
+}
+
+.img{
+  float: left;
+  margin: 0 2em 0 2em;
+  height: 75px;
+  width: 75px;
+}
+
+#city-img{
+  float: right;
+  margin: 0;
+  height: 75px;
+  width: 75px;
+}
+
+.buttons{
+  background-color: green;
+  padding: 10px;
+  text-align: center;
 }
